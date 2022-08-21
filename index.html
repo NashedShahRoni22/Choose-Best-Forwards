@@ -15,7 +15,8 @@
   </head>
   <body>
     <header
-      class="d-flex flex-column align-items-center justify-content-center">
+      class="d-flex flex-column align-items-center justify-content-center"
+    >
       <h1>Select Your Best Five</h1>
       <p class="text-center mt-5">
         “Remember, once you set a goal, it’s all about how hard you’re willing
@@ -29,14 +30,151 @@
       </p>
     </header>
     <main>
-        <div class="row">
-            <div class="col-8">
-                
+      <div class="row mx-3">
+        <!-- players card section  -->
+        <div class="col-md-8 mt-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/messi.png"
+                  class="card-img-top card-img"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Leo Messi</h5>
+                  <p class="card-text">58 Goals - 186 Assist</p>
+                  <button class="text-white">Select</button>
+                </div>
+              </div>
             </div>
-            <div class="col-4">
-
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/neymar.jpeg"
+                  class="card-img-top card-img"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Neymar Jr</h5>
+                  <p class="card-text">58 Goals - 186 Assist</p>
+                  <button class="text-white">Select</button>
+                </div>
+              </div>
             </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/mbappe.jpg"
+                  class="card-img-top card-img"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Kylian Mbappe</h5>
+                  <p class="card-text">58 Goals - 186 Assist</p>
+                  <button class="text-white">Select</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/ronaldo.jpg"
+                  class="card-img-top card-img"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">C Ronaldo</h5>
+                  <p class="card-text">58 Goals - 186 Assist</p>
+                  <button class="text-white">Select</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/haaland.jpg"
+                  class="card-img-top card-img"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">E Haaland</h5>
+                  <p class="card-text">58 Goals - 186 Assist</p>
+                  <button class="text-white">Select</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="./img/Paulo-Dybala-celeb.jpg"
+                  class="card-img-top card-img"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <h5 class="card-title">Paulo Dybala</h5>
+                  <p class="card-text">58 Goals - 186 Assist</p>
+                  <button class="text-white">Select</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- calc section -->
+        <div class="col-md-4 mt-5">
+          <div class="selected-five">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="card-title text-center">Selected Five</h2>
+                <ol>
+                  <li>Lionel Messi</li>
+                  <li>Lionel Messi</li>
+                  <li>Lionel Messi</li>
+                  <li>Lionel Messi</li>
+                  <li>Lionel Messi</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="budget mt-3">
+            <div class="card">
+              <div class="card-body text-center">
+                <h2 class="card-title">Budget</h2>
+                <table class="mx-auto my-4">
+                  <tr>
+                    <td>Per Player</td>
+                    <td>
+                      <input type="number" value="1000" />
+                    </td>
+                  </tr>
+                </table>
+                
+                <button>Calculate</button>
+
+                <table class="mx-auto my-4">
+                  <p>Player Expense $<span>5000</span></p>
+                  <tr>
+                    <td>Manager</td>
+                    <td>
+                      <input type="number" value="2000" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Coach</td>
+                    <td>
+                      <input type="number" value="4000" />
+                    </td>
+                  </tr>
+                </table>
+                <button>Calculate Total</button>
+                <p>Total $<span>11000</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
     <!-- bootstrap  -->
