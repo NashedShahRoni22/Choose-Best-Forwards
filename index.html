@@ -42,9 +42,9 @@
                   alt="..."
                 />
                 <div class="card-body text-center">
-                  <h5 class="card-title">Leo Messi</h5>
+                  <h5 class="card-title" id="player-messi">Leo Messi</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white">Select</button>
+                  <button class="text-white" id="select-messi-btn">Select</button>
                 </div>
               </div>
             </div>
@@ -56,9 +56,9 @@
                   alt="..."
                 />
                 <div class="card-body text-center">
-                  <h5 class="card-title">Neymar Jr</h5>
+                  <h5 class="card-title" id="player-neymar">Neymar Jr</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white">Select</button>
+                  <button class="text-white" id="select-neymar-btn">Select</button>
                 </div>
               </div>
             </div>
@@ -70,9 +70,9 @@
                   alt="..."
                 />
                 <div class="card-body text-center">
-                  <h5 class="card-title">Kylian Mbappe</h5>
+                  <h5 class="card-title" id="player-mbappe">Kylian Mbappe</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white">Select</button>
+                  <button class="text-white" id="select-mbappe-btn">Select</button>
                 </div>
               </div>
             </div>
@@ -84,9 +84,9 @@
                   alt="..."
                 />
                 <div class="card-body text-center">
-                  <h5 class="card-title">C Ronaldo</h5>
+                  <h5 class="card-title" id="player-ronaldo">C Ronaldo</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white">Select</button>
+                  <button class="text-white" id="select-ronaldo-btn">Select</button>
                 </div>
               </div>
             </div>
@@ -98,9 +98,9 @@
                   alt="..."
                 />
                 <div class="card-body text-center">
-                  <h5 class="card-title">E Haaland</h5>
+                  <h5 class="card-title" id="player-haaland">E Haaland</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white">Select</button>
+                  <button class="text-white" id="select-haaland-btn">Select</button>
                 </div>
               </div>
             </div>
@@ -112,9 +112,9 @@
                   alt="..."
                 />
                 <div class="card-body text-center">
-                  <h5 class="card-title">Paulo Dybala</h5>
+                  <h5 class="card-title" id="player-dybala">Paulo Dybala</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white">Select</button>
+                  <button class="text-white" id="select-dybala-btn">Select</button>
                 </div>
               </div>
             </div>
@@ -127,12 +127,8 @@
             <div class="card">
               <div class="card-body">
                 <h2 class="card-title text-center">Selected Five</h2>
-                <ol>
-                  <li>Lionel Messi</li>
-                  <li>Lionel Messi</li>
-                  <li>Lionel Messi</li>
-                  <li>Lionel Messi</li>
-                  <li>Lionel Messi</li>
+                <ol id="list-container">
+
                 </ol>
               </div>
             </div>
@@ -146,29 +142,29 @@
                   <tr>
                     <td>Per Player</td>
                     <td>
-                      <input type="number" value="1000" />
+                      <input type="number" value="1000" class="ms-1 py-2"/>
                     </td>
                   </tr>
                 </table>
                 
-                <button>Calculate</button>
+                <button class="my-2">Calculate</button>
 
                 <table class="mx-auto my-4">
                   <p>Player Expense $<span>5000</span></p>
                   <tr>
                     <td>Manager</td>
                     <td>
-                      <input type="number" value="2000" />
+                      <input type="number" value="2000" class="my-2 ms-1 py-2"/>
                     </td>
                   </tr>
                   <tr>
                     <td>Coach</td>
                     <td>
-                      <input type="number" value="4000" />
+                      <input type="number" value="4000" class="my-2 ms-1 py-2"/>
                     </td>
                   </tr>
                 </table>
-                <button>Calculate Total</button>
+                <button class="my-2">Calculate Total</button>
                 <p>Total $<span>11000</span></p>
               </div>
             </div>
