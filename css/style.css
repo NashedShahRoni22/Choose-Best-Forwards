@@ -8,16 +8,29 @@ body{
 header{
     background-color: black;
     height: 80vh;
+    position: relative;
 }
 header h1{
-    font-weight: 400;
     font-size: 76px;
-    text-align: center;
     color: #FF5E19;
 }
 header p{
     color: white;
     font-size: 18px;
+}
+.banner-ball-img{
+    height: 200px;
+    width: 200px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.banner-player-img{
+    height: 600px;
+    width: 400px;
+    bottom: 0;
+    right: 0;
+    position: absolute;
 }
 /* main section styles  */
 main{
@@ -36,9 +49,12 @@ main{
 }
 .selected-five h2, .budget h2{
     color: #FF5E19;
+    border-bottom: 2px solid white;
 }
 .selected-five li{
-    margin: 22px 0;
+    margin: 16px 0;
+    border-bottom: 1px solid #FF5E19;
+    padding: 8px;
 }
 .budget p{
     font-size: 20px;

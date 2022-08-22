@@ -1,4 +1,4 @@
-//common function
+//common functions
 function getInnerText(getId){
     const playerNameField = document.getElementById(getId);
     const playerName = playerNameField.innerText;
@@ -9,18 +9,28 @@ function getInnerValue(getId){
     const playerName = parseInt(playerNameField.value);
     return playerName;
 }
-function setListItem(setId,playerName){
-    const listContainer = document.getElementById(setId);
-    const li = document.createElement('li');
-    li.innerText = playerName;
-    listContainer.appendChild(li);
-}
 function setTextFeild(setId,value){
     const setField = document.getElementById(setId);
     setField.innerText = value;
 }
+//set player name in list
+function setListItem(setId,playerName){
+    const listContainer = document.getElementById(setId);
+    const li = document.createElement('li');
+    li.innerText = playerName;
+    const playerList = document.querySelectorAll('li');
+    if(playerList.length <= 4){
+        listContainer.appendChild(li);
+    }
+    else{
+        alert('You have already selected 5 players!')
+    }
+}
+//disbled btn
 function disableButton(btnId) {
-    document.getElementById(btnId).disabled = 'true';
+    const btn = document.getElementById(btnId);
+    btn.disabled = 'true';
+    btn.style.backgroundColor = 'red';
 }
 //selected Five Part
 document.getElementById('select-messi-btn').addEventListener('click', function(){
@@ -52,6 +62,21 @@ document.getElementById('select-dybala-btn').addEventListener('click', function(
     const getName = getInnerText('player-dybala');
     setListItem('list-container',getName);
     disableButton('select-dybala-btn');
+})
+document.getElementById('select-maria-btn').addEventListener('click', function(){
+    const getName = getInnerText('player-maria');
+    setListItem('list-container',getName);
+    disableButton('select-maria-btn');
+})
+document.getElementById('select-salah-btn').addEventListener('click', function(){
+    const getName = getInnerText('player-salah');
+    setListItem('list-container',getName);
+    disableButton('select-salah-btn');
+})
+document.getElementById('select-xavi-btn').addEventListener('click', function(){
+    const getName = getInnerText('player-xavi');
+    setListItem('list-container',getName);
+    disableButton('select-xavi-btn');
 })
 
 //Budget Part
