@@ -1,14 +1,17 @@
 //common functions
+//get InnerText
 function getInnerText(getId){
     const playerNameField = document.getElementById(getId);
     const playerName = playerNameField.innerText;
     return playerName;
 }
+//get InnerValue
 function getInnerValue(getId){
     const playerNameField = document.getElementById(getId);
     const playerName = parseInt(playerNameField.value);
     return playerName;
 }
+//set text field
 function setTextFeild(setId,value){
     const setField = document.getElementById(setId);
     setField.innerText = value;
@@ -23,14 +26,13 @@ function setListItem(setId,playerName){
         listContainer.appendChild(li);
     }
     else{
-        alert('You have already selected 5 players!')
+        alert('You have already selected 5 players!');
     }
 }
 //disbled btn
 function disableButton(btnId) {
     const btn = document.getElementById(btnId);
     btn.disabled = 'true';
-    btn.style.backgroundColor = 'red';
 }
 //selected Five Part
 document.getElementById('select-messi-btn').addEventListener('click', function(){
@@ -80,12 +82,14 @@ document.getElementById('select-xavi-btn').addEventListener('click', function(){
 })
 
 //Budget Part
-document.getElementById('calc-player-expense').addEventListener('click', function(){
+document.getElementById('calc-player-expense').addEventListener('click', function(){    
     const perPlayerCost = getInnerValue('per-player-cost');
-    const playerExpense = perPlayerCost * 5;
+    const playerNumber = document.querySelectorAll('li');
+    const playerExpense = perPlayerCost * playerNumber.length;
     setTextFeild('player-expense-field',playerExpense);
 })
 
+//total expense
 document.getElementById('calc-total-expense').addEventListener('click', function(){
     const managerCost = getInnerValue('manager-cost');
     const coachCost = getInnerValue('coach-cost');

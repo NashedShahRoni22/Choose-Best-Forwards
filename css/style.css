@@ -52,11 +52,12 @@ main{
     border-bottom: 2px solid white;
 }
 .selected-five li{
+    font-size: 20px;
     margin: 16px 0;
     border-bottom: 1px solid #FF5E19;
     padding: 8px;
 }
 .budget p{
-    font-size: 20px;
+    font-size: 24px;
     color: #FF5E19;
 }
