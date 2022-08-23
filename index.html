@@ -43,7 +43,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title" id="player-messi">Leo Messi</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white" id="select-messi-btn">Select</button>
+                  <button class="text-white" id="select-messi-btn" onClick="addToList(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title" id="player-neymar">Neymar Jr</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white" id="select-neymar-btn">Select</button>
+                  <button class="text-white" id="select-neymar-btn" onClick="addToList(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title" id="player-mbappe">Kylian Mbappe</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white" id="select-mbappe-btn">Select</button>
+                  <button class="text-white" id="select-mbappe-btn" onClick="addToList(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -85,7 +85,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title" id="player-ronaldo">C Ronaldo</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white" id="select-ronaldo-btn">Select</button>
+                  <button class="text-white" id="select-ronaldo-btn" onClick="addToList(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -99,7 +99,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title" id="player-haaland">E Haaland</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white" id="select-haaland-btn">Select</button>
+                  <button class="text-white" id="select-haaland-btn" onClick="addToList(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -113,7 +113,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title" id="player-dybala">Paulo Dybala</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white" id="select-dybala-btn">Select</button>
+                  <button class="text-white" id="select-dybala-btn" onClick="addToList(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title" id="player-maria">D Maria</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white" id="select-maria-btn">Select</button>
+                  <button class="text-white" id="select-maria-btn" onClick="addToList(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -141,7 +141,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title" id="player-salah">M Salah</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white" id="select-salah-btn">Select</button>
+                  <button class="text-white" id="select-salah-btn" onClick="addToList(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -155,7 +155,7 @@
                 <div class="card-body text-center">
                   <h5 class="card-title" id="player-xavi">Xavi</h5>
                   <p class="card-text">58 Goals - 186 Assist</p>
-                  <button class="text-white" id="select-xavi-btn">Select</button>
+                  <button class="text-white" id="select-xavi-btn" onClick="addToList(this)">Select</button>
                 </div>
               </div>
             </div>
@@ -183,14 +183,14 @@
                   <label>Player</label><br>
                   <input type="number" class="ms-2 py-2" id="per-player-cost"/>
                 </div> 
-                <button class="my-2" id="calc-player-expense">Calculate</button>
+                <button class="my-2" id="calc-player-expense" onclick="calcPlayerExpense()">Calculate</button>
 
                 <p>Player Expense $<span id="player-expense-field">0000</span></p>
                     <label class="my-3">Manager</label><br>
                     <input type="number" class="py-2" id="manager-cost"/><br>
                     <label class="my-3">Coach</label><br>
                     <input type="number" class="py-2" id="coach-cost"/><br>
-                <button class="my-3" id="calc-total-expense">Calculate Total</button>
+                <button class="my-3" id="calc-total-expense" onclick="calcTotal()">Calculate Total</button>
                 <p>Total $<span id="total-cost-field">0000</span></p>
               </div>
             </div>
